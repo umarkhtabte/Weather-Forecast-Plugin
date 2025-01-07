@@ -3,7 +3,7 @@
 Plugin Name: Interactive Weather Dashboard
 Description: Displays a 5-day weather forecast with dynamic styling and filtering. Add this shortcode "[interactive_weather]".
 Version: 1.0
-Author: Hassan Ahmad Usmani
+Author: Umar Khtab
 */
 
 // Define constants

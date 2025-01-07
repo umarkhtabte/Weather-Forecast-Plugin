@@ -1,0 +1,209 @@
+/* Clear filter button Style */
+.clear-filter-button {
+    background-color: rgb(40 90 231);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.clear-filter-button:hover {
+    background-color: rgb(12, 53, 165);
+}
+
+.error-message, .no-data-message{
+    color: #3e3b3b;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Section Styles */
+#weather-section {
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(143deg, rgb(0 123 255 / 15%), rgb(235 183 121 / 15%));
+    color: #fff;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.weather-heading {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #3b3c3c;
+}
+
+.weather-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #383d41;
+}
+
+/* Filter Bar Styles */
+/* Ensure labels are displayed above inputs */
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 250px; 
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.filter-bar label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #3b4249;
+    margin-bottom: 5px; 
+}
+
+.filter-bar input {
+    padding: 12px;
+    width: 100%; 
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    font-size: 14px;
+    color: #495057;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.1); 
+}
+
+.filter-bar input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 2px 6px rgba(0, 123, 255, 0.5);
+}
+
+/* Weather Cards Grid */
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Weather Card Styles */
+.weather-card {
+    padding: 20px 19px 20px 19px !important;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; 
+    display: inline-block;
+    margin: 15px;
+    overflow: hidden; 
+    background: #f0f0f0; 
+}
+
+.weather-card .day,
+.weather-card .date,
+.weather-card .temperature,
+.weather-card .status,
+.weather-card .details {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5px;
+}
+
+/* Details and Text Styles */
+.weather-card .day {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.weather-card .date {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.weather-card .temperature {
+    font-size: 1.5em; 
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.weather-card .status {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.weather-card .day,
+.weather-card .date {
+    font-size: 1.2em;
+}
+
+.weather-card .details {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .weather-card {
+        margin: 0 auto;
+    }
+
+    .filter-bar input {
+        width: calc(100% - 20px);
+    }
+}
+
+
+/* Weather Card Styles */
+.weather-card {
+    width: -webkit-fill-available;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card:hover {
+    /* transform: scale(1.05);  */
+    cursor: pointer;
+    color: #000;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Details and Text Styles */
+.weather-card .day,
+.weather-card .date,
+.weather-card .temperature,
+.weather-card .status,
+.weather-card .details span {
+    transition: transform 0.3s ease;
+}
+
+/* Dynamic Text Color Class */
+.text-dark {
+    color: #343a40; /* Dark text for light backgrounds */
+}
+
+.text-light {
+    color: #fff; /* Light text for dark backgrounds */
+}
+
+
+

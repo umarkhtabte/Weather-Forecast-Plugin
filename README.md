@@ -1,4 +1,5 @@
 === Interactive Weather Dashboard ===
+
 Contributors: umarkhtabte
 Tags: weather, forecast, shortcode, dashboard, interactive, ajax  
 Requires at least: 5.6  
@@ -24,14 +25,16 @@ An interactive WordPress plugin that displays a 5-day weather forecast using a d
 - AJAX-based dynamic data loading.
 - Easy integration with shortcodes.
 - Built-in transient caching to optimize API calls.
+- Use this API endpiont make sure you have an active account API of openweathermap https://api.openweathermap.org/data/2.5/forecast
 
 == Installation ==
 
 1. Download the plugin from the WordPress repository or upload the plugin manually.
-2. Navigate to **Plugins > Add New** in your WordPress dashboard.
-3. Click **Upload Plugin**, select the `interactive-weather-dashboard.zip` file, and click **Install Now**.
-4. Activate the plugin through the **Plugins** menu in WordPress.
-5. Add the shortcode `[interactive_weather]` to any post, page, or widget to display the weather forecast.
+2. Use Your Own API key in `class-weather-api.php` file to prevent any type of error.
+3. Navigate to **Plugins > Add New** in your WordPress dashboard.
+4. Click **Upload Plugin**, select the `interactive-weather-dashboard.zip` file, and click **Install Now**.
+5. Activate the plugin through the **Plugins** menu in WordPress.
+6. Add the shortcode `[interactive_weather]` to any post, page, or widget to display the weather forecast.
 
 == Usage ==
 
